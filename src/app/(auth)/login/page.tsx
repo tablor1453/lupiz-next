@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
   const router = useRouter();
+  const handleLogin = (e: React.FormEvent) => {};
 
   return (
     <div className="flex justify-center w-screen items-center">
@@ -11,6 +12,7 @@ export default function LoginPage() {
         <h1 className="text-center text-2xl font-bold text-gray-600 mb-6">
           LOGIN
         </h1>
+        <form onSubmit={handleLogin}></form>
         <div className="w-3/4 mb-6">
           <input
             type="email"
